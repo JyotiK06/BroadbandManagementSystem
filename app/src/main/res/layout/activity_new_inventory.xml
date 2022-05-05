@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewInventory">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorPrimary" />
+
+        <View
+            android:id="@+id/wave"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/view"
+            android:background="@drawable/wave" />
+
+        <TextView
+            android:id="@+id/customerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/ubuntubold"
+            android:text="Inventory Panel"
+            android:textColor="@color/white"
+            android:textSize="32dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customerText"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/ubuntubold"
+            android:text="Here you can add new invertory"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/customerText"
+            android:src="@drawable/invertory3" />
+
+        <LinearLayout
+            android:id="@+id/fieldContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wave"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/invetoryName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_broder"
+                android:drawableStart="@drawable/ic_store"
+                android:drawablePadding="16dp"
+                android:hint="Name"
+                android:inputType="text"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:paddingHorizontal="20dp"
+                android:text="validation here"
+                android:fontFamily="@font/ubuntubold"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/invetoryPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_broder"
+                android:drawableStart="@drawable/ic_money"
+                android:drawablePadding="16dp"
+                android:hint="Price"
+                android:inputType="numberDecimal"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/priceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:paddingHorizontal="20dp"
+                android:text="validation here"
+                android:fontFamily="@font/ubuntubold"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/invetoryQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_broder"
+                android:drawableStart="@drawable/ic_quantity"
+                android:drawablePadding="16dp"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:padding="16dp" />
+
+            <TextView
+                android:id="@+id/quntityText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:paddingHorizontal="20dp"
+                android:text="validation here"
+                android:fontFamily="@font/ubuntubold"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                android:gravity="center_vertical"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/inventoryTotalAmt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fieldContainer"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/ubuntubold"
+            android:text="Price will be here"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveInventory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/inventoryTotalAmt"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/round_btn"
+            android:text="Save"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BroadBandManagementSystem</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="enter_email_info">Enter Email to which OTP to be sent.</string>
+    <string name="enter_otp">Enter OTP in below to change password.</string>
+</resources>
